@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mainPage</title>
+
+	<!-- Material Icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="./swiper.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+	<!-- lodash -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+		integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- gsap & scrollTo -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+		integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"
+		integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+		integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- swiper  -->
+	<script src="./swiper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+	<script defer src="./js/main.js"></script>
+
+
+</head>
+
+<body>
+	<div class="bar-container">
+		<div class="top-bar">
+			<div class="nav-links">
+				<a href="" class="logo"><img src="./img/logo.png"></a>
+				<a href="">정치</a>
+				<a href="">경제</a>
+				<a href="">문화</a>
+				<a href="">IT과학기술</a>
+				<a href="">스포츠</a>
+				<a href="">국제</a>
+				<a href="" style="color:#FF4545;">내가 만들어보는 핫 뉴스</a>
+			</div>
+			<div class="utill">
+				<div class="search">
+					<input type="text" placeholder="검색어를 입력하세요.">
+					<button><img src="./img/glassIcon.png"></button>
+				</div>
+				<div class="member">
+					<a href=''>로그인</a>
+					<p>&nbsp&nbsp;|&nbsp&nbsp;</p><a href=''>회원가입</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page1 content">
+		<p class="tit">🔥 HOT TOPIC 🔥</p>
+		<div class="swiper swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src='./images/duck.jpg' class="slide-content"></div>
+				<div class="swiper-slide"><img src='./images/duck.jpg' class="slide-content"></div>
+				<div class="swiper-slide"><img src='./images/duck.jpg' class="slide-content"></div>
+				<div class="swiper-slide"><img src='./images/duck.jpg' class="slide-content"></div>
+				<div class="swiper-slide"><img src='./images/duck.jpg' class="slide-content"></div>
+				<div class="swiper-slide"><img src='./images/duck.jpg' class="slide-content"></div>
+				<div class="swiper-slide"><img src='./images/duck.jpg' class="slide-content"></div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+	</div>
+
+
+	<!-- 김세윤 작업 -->
+	<!-- 이런 뉴스는 어때요? -->
+	<div class="empty"></div> <!--scrollMagic을 보여주기 위한 임시 공간-->
+
+
+	<section class="recommend-news">
+		<div class="inner">
+			<div class="title">
+				<h3>이런 뉴스는 어때요? 🐽</h3>
+			</div>
+			<div class="more">
+				<a href="javascript:void(0)">더보기 <div class="material-icons">arrow_forward_ios</div></a>
+			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./images/son.jpg" alt="son" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/han.jpg" alt="han" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/duck.jpg" alt="duck" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/pengsu.jpg" alt="pengsu" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-pagination"></div>
+			<div class="swiper-prev"></div>
+			<div class="swiper-next"></div>
+
+
+			<div class="youtube scroll-spy">
+				<div class="youtube_video">
+
+					<div class="video_title">Video</div>
+					<div class="more">
+						<a href="javascript:void(0)">더보기 <div class="material-icons">arrow_forward_ios</div></a>
+					</div>
+
+					<div class="youtube_area">
+						<div class="video1 back-to-position to-right">
+							<iframe width="560" height="315"
+								src="https://www.youtube.com/embed/FNCYEaSiaZg?si=VU5le631o3b3KTtJ&amp;start=10"
+								title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen></iframe>
+						</div>
+						<div class="video2 back-to-position to-right">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/EqMFqQnjYSI?si=lv8gHMLhyfKBvFX5"
+								title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+
+				<div class="youtube_list">
+
+					<div class="list_title">List</div>
+					<div class="more">
+						<a href="javascript:void(0)">더보기 <div class="material-icons">arrow_forward_ios</div></a>
+					</div>
+					<div class="list_news1">
+						<div class="news1_image back-to-position to-left"></div>
+						<!-- <img src="" alt=""> -->
+						<div class="news1_text back-to-position to-left">복귀 시한 마지막날, 곳곳서 복귀 움직임…정부, 전공의와 대화</div>
+					</div>
+					<div class="list_news2">
+						<div class="news2_image back-to-position to-left"></div>
+						<!-- <img src="" alt=""> -->
+						<div class="news2_text back-to-position to-left">복귀 시한 마지막날, 곳곳서 복귀 움직임…정부, 전공의와 대화</div>
+					</div>
+					<div class="list_news3">
+						<div class="news3_image back-to-position to-left"></div>
+						<!-- <img src="" alt=""> -->
+						<div class="news3_text back-to-position to-left">복귀 시한 마지막날, 곳곳서 복귀 움직임…정부, 전공의와 대화</div>
+					</div>
+
+
+
+				</div>
+
+			</div>
+
+
+			<!-- 정치 -->
+			<div class="title">
+				<h3>정치</h3>
+			</div>
+			<div class="more">
+				<a href="javascript:void(0)">더보기 <div class="material-icons">arrow_forward_ios</div></a>
+			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./images/son.jpg" alt="son" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/han.jpg" alt="han" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/duck.jpg" alt="duck" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/pengsu.jpg" alt="pengsu" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 경제 -->
+			<div class="title">
+				<h3>정치</h3>
+			</div>
+			<div class="more">
+				<a href="javascript:void(0)">더보기 <div class="material-icons">arrow_forward_ios</div></a>
+			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./images/son.jpg" alt="son" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/han.jpg" alt="han" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/duck.jpg" alt="duck" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/pengsu.jpg" alt="pengsu" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 문화 -->
+			<div class="title">
+				<h3>정치</h3>
+			</div>
+			<div class="more">
+				<a href="javascript:void(0)">더보기 <div class="material-icons">arrow_forward_ios</div></a>
+			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./images/son.jpg" alt="son" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/han.jpg" alt="han" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/duck.jpg" alt="duck" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/pengsu.jpg" alt="pengsu" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- IT과학기술 -->
+			<div class="title">
+				<h3>정치</h3>
+			</div>
+			<div class="more">
+				<a href="javascript:void(0)">더보기 <div class="material-icons">arrow_forward_ios</div></a>
+			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./images/son.jpg" alt="son" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/han.jpg" alt="han" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/duck.jpg" alt="duck" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/pengsu.jpg" alt="pengsu" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 스포츠 -->
+			<div class="title">
+				<h3>정치</h3>
+			</div>
+			<div class="more">
+				<a href="javascript:void(0)">더보기 <div class="material-icons">arrow_forward_ios</div></a>
+			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./images/son.jpg" alt="son" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/han.jpg" alt="han" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/duck.jpg" alt="duck" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/pengsu.jpg" alt="pengsu" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 국제 -->
+			<div class="title">
+				<h3>정치</h3>
+			</div>
+			<div class="more">
+				<a href="javascript:void(0)">더보기 <div class="material-icons">arrow_forward_ios</div></a>
+			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./images/son.jpg" alt="son" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/han.jpg" alt="han" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/duck.jpg" alt="duck" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="./images/pengsu.jpg" alt="pengsu" />
+						<a href="javascript:void(0)">손흥민 이강인과 극적으로 화해해....</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+	</section>
+
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="inner">
+
+			<ul class="menu">
+				<li><a href="javascript:void(0)">개인정보처리방침</a></li>
+				<li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+			</ul>
+
+			<div class="info">
+				<span>사업자등록번호 ~~</span>
+				<span>(주)TOPIG</span>
+				<span>개인정보 책임자 &#58; 정한샘</span>
+			</div>
+
+			<p class="copyright">
+				&copy; <span class="this-year"></span> ToPig Company. All Rights Reserved.
+			</p>
+			<img src="./img/logo.png" alt="logo" class="logo" />
+
+		</div>
+	</footer>
+
+
+	<!-- 스크롤 버튼 -->
+	<div id="to-top">
+		<div class="material-icons">arrow_upward</div>
+	</div>
+
+
+</body>
+
+</html>

@@ -34,7 +34,7 @@ spyEls.forEach(function (spyEl) {
 
 
 
-  var mySwiper = new Swiper(".swiper=container", {
+  var mySwiper = new Swiper(".swiper-container", {
     spaceBetween: 8,
     slidesPerView: 4.5,
     centeredSlides: 4.5,

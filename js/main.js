@@ -19,6 +19,17 @@ toTopEl.addEventListener('click', function () {
   });
 });
 
+//상단바
+var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementsByClassName("menu-bar")[0].style.top = "0";
+            } else {
+                document.getElementsByClassName("menu-bar")[0].style.top = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
 
 // 일정 부분 이상 스크롤이 넘어가면 list 항목들이 보이게 됨
 const spyEls = document.querySelectorAll('div.scroll-spy');
@@ -33,7 +44,7 @@ spyEls.forEach(function (spyEl) {
 });
 
 
-
+//스와이퍼
   var mySwiper = new Swiper(".swiper-container", {
     spaceBetween: 8,
     slidesPerView: 4.5,

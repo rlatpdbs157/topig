@@ -28,6 +28,77 @@
 
 
 /* 김세윤 작업 */
+/* Newspaper */
+.newspaper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.newspaper .news1 {
+  width: 50%;
+  background-image: url(../images/news1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+}
+.newspaper .news-text {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.newspaper .news-emoticons {
+  position: absolute;
+  left: 80px;
+  bottom: 40px;
+  color: white;
+}
+.newspaper .news-emoticons .material-icons {
+  font-size: 30px;
+}
+.newspaper .news2 {
+  width: 50%;
+  background-image: url(../images/news2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+}
+.newspaper .news3 {
+  width: 50%;
+  background-image: url(../images/news3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+}
+.newspaper .news4 {
+  width: 50%;
+  background-image: url(../images/duck.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+}
+.newspaper .news5 {
+  width: 50%;
+  background-image: url(../images/son.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+}
+.newspaper .news6 {
+  width: 50%;
+  background-image: url(../images/pengsu.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+}
+
 
 /* COMMON */
 
@@ -48,5 +119,7 @@
   right: 30px;
   z-index: 9;
 }
+
+
 
 
